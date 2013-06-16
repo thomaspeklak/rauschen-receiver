@@ -2,7 +2,7 @@
 
 var server = require("./server");
 var path   = require("path");
-var config = require("../config");
+var config = require("./config");
 
 if (config.environment === "development") {
     new require("../lib/request-counter")(server, "new-request");

@@ -8,5 +8,7 @@ describe "Frontend", ->
       .set("Accept", "application/javascript")
       .expect("Content-Type", "application/javascript")
       .expect("200")
-      .expect(/Rauschen/, done)
+      .expect(/Rauschen/, ->
+        done();
+      )
 
