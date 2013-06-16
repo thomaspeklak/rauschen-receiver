@@ -34,7 +34,7 @@
         , "stream-serializer" : "*"
         , "mongodb"           : "*"
         , "jade"              : ">0.0.1"
-        , "request-counter"   : "*"
+        , "events-counter"    : "*"
     },
     "devDependencies": {
         "coffee-script" : "*"

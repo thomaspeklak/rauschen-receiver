@@ -5,7 +5,7 @@ var path   = require("path");
 var config = require("./config");
 
 if (config.environment === "development") {
-    new require("../lib/request-counter")(server, "new-request");
+    new require("events-counter")(server, "new-request");
 }
 
 var domainRestrictor = require(
