@@ -1,52 +1,54 @@
 {
-    "name": "rauschen-receiver",
-    "version": "0.0.0",
-    "author": "Thomas Peklak <thomas.peklak@gmail.com>",
-    "description": "a website performance monitor that leverages window.performance.timing",
-    "contributors": [
-        {
-            "name": "Thomas Peklak",
-            "email": "thomas.peklak@gmail.com"
-        }
-    ],
-    "scripts": {
-        "start" : "mode .",
-        "test": "node_modules/mocha/bin/mocha"
-    },
-    "main": "./index.js",
-    "repository": {
-        "type": "git",
-        "url": ""
-    },
-    "keywords": [
-        "server",
-        "web",
-        "performance",
-        "monitor"
-    ],
-    "dependencies" : {
-        "express"             : "*"
-        , "scuttlebutt"       : "*"
-        , "useragent"         : "*"
-        , "through"           : "*"
-        , "pause-stream"      : "*"
-        , "event-stream"      : "*"
-        , "stream-serializer" : "*"
-        , "mongodb"           : "*"
-        , "jade"              : ">0.0.1"
-        , "events-counter"    : "*"
-    },
-    "devDependencies": {
-        "coffee-script" : "*"
-        , "mocha"       : "*"
-        , "should"      : "*"
-        , "sinon"       : "*"
-        , "supertest"   : "*"
-        , "growl"       : "*"
-        , "request"     : "*"
-    },
-    "license": "MIT",
-    "engine": {
-        "node": ">=0.8"
+  "name": "rauschen-receiver",
+  "version": "0.0.0",
+  "author": "Thomas Peklak <thomas.peklak@gmail.com>",
+  "description": "a website performance monitor that leverages window.performance.timing",
+  "contributors": [
+    {
+      "name": "Thomas Peklak",
+      "email": "thomas.peklak@gmail.com"
     }
+  ],
+  "scripts": {
+    "start": "mode .",
+    "test": "node_modules/mocha/bin/mocha"
+  },
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "server",
+    "web",
+    "performance",
+    "monitor"
+  ],
+  "dependencies": {
+    "express": "*",
+    "scuttlebutt": "*",
+    "useragent": "*",
+    "through": "*",
+    "pause-stream": "*",
+    "event-stream": "*",
+    "stream-serializer": "*",
+    "mongodb": "*",
+    "jade": ">0.0.1",
+    "events-counter": "*",
+    "seaport": "~1.5.0",
+    "rauschen-registry": "~0.0.0"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "mocha": "*",
+    "should": "*",
+    "sinon": "*",
+    "supertest": "*",
+    "growl": "*",
+    "request": "*"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.8"
+  }
 }
